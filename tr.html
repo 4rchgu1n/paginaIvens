@@ -3,18 +3,50 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        table{
-            
+        body{
+            margin: 0;
+            padding: 0;
         }
+        table{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        td,th{
+            border: 1px solid black;
+            border-right: 0;
+            border-left: 0;
+        }
+        .inerTable:first-child th{
+            border-top: none;
+        }
+        .inerTable:last-child td{
+            border-bottom: none;
+        }
+        .inerTable{
+            border-collapse: collapse;
+    
+        }
+        .inerTable td,th{
+            padding: 0;
+            margin: 0px;
+        }
+        .entradaMenu {
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
-<table border="solid">
+<table class="inerTable" style="width: 100%; height: 100%;">
     <tr>
-        <td class="entradaMenu" style="width: 20%;"><a href="Arquitectura-Historia.pdf" target="macro">Arquitectura Historia</a></td>
+        <th class="entradaMenu">Tema 2</th>
     </tr>
     <tr>
-        <td class="entradaMenu" style="width: 20%;"><a href="Arquitectura-CPU.pdf" target="macro">Arquitectura CPU</a></td>
+        <td class="entradaMenu"><a href="Arquitectura-Historia.pdf" target="macro">Arquitectura Historia</a></td>
+    </tr>
+    <tr>
+        <td class="entradaMenu"><a href="Arquitectura-CPU.pdf" target="macro">Arquitectura CPU</a></td>
     </tr>
     <tr>
         <td class="entradaMenu"><a href="Arquitectura-Memoria.pdf" target="macro">Arquitectura Memoria</a></td>
